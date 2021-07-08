@@ -8,7 +8,7 @@ export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'my_template', e.target, 'user_nLMZtt8T11S8g2tPw7AZE')
+    emailjs.sendForm('gmail', 'my_template', e.target, '')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
